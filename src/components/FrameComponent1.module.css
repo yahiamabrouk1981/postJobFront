@@ -116,6 +116,18 @@
   gap: var(--gap-base);
   max-width: 100%;
 }
+
+.infoCard:hover,
+.infoCard1:hover,
+.infoCard2:hover {
+  background-color: #28a745;
+}
+
+.infoCard:hover .description1,
+.infoCard1:hover .description2,
+.infoCard2:hover .description3 {
+  color: #fff;
+}
 .radioIcon {
   width: 24px;
   height: 24px;
@@ -259,4 +271,42 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+}
+
+.emailForm {
+  display: flex;
+  align-items: center;
+  border: 1px solid #888;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #121212; /* Background color matching the dark theme */
+}
+
+.emailInput {
+  flex-grow: 1;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff; /* Text color to match the dark theme */
+  font-size: 16px;
+}
+
+.emailInput::placeholder {
+  color: #ccc; /* Placeholder text color */
+}
+
+.submitButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #32cd32; /* Button background color */
+  color: #000; /* Button text color */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #28a745; /* Button background color on hover */
 }

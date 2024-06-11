@@ -20,26 +20,19 @@ const FrameComponent1 = ({ className = "" }) => {
             resume keyword checker, outreach message writer, and more. Powered
             by GPT
           </p>
-          <div className={styles.input}>
-            <div className={styles.content}>
-              <div className={styles.supportingText}>Your Email</div>
-              <Button
-                className={styles.button}
-                disableElevation
-                variant="contained"
-                sx={{
-                  textTransform: "none",
-                  color: "#1f392c",
-                  fontSize: "16",
-                  background: "#6de754",
-                  borderRadius: "12px",
-                  "&:hover": { background: "#6de754" },
-                  width: 175,
-                  height: 44,
-                }}
-              >
-                Start For Free
-              </Button>
+
+          <div className={styles.content}>
+            <div className={styles.supportingText}>
+              <form className={styles.emailForm}>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className={styles.emailInput}
+                />
+                <button type="submit" className={styles.submitButton}>
+                  Start For Free
+                </button>
+              </form>
             </div>
           </div>
         </div>

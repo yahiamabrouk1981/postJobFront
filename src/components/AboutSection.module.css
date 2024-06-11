@@ -313,6 +313,24 @@
   color: var(--color-white);
   font-family: var(--font-sf-pro-text);
 }
+
+.infoCard:hover,
+.infoCard1:hover,
+.infoCard2:hover,
+.infoCard3:hover,
+.infoCard4:hover,
+.infoCard5:hover {
+  background-color: #28a745;
+}
+
+.infoCard:hover .description1,
+.infoCard1:hover .description2,
+.infoCard2:hover .description3,
+.infoCard3:hover .description4,
+.infoCard4:hover .description5,
+.infoCard5:hover .description6 {
+  color: #fff;
+}
 @media screen and (max-width: 1050px) {
   .title {
     font-size: var(--font-size-19xl);
