@@ -1,0 +1,127 @@
+.logoIcon {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.postjob {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 59px;
+  white-space: nowrap;
+}
+.logo {
+  border-radius: var(--br-81xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xs);
+  gap: var(--gap-9xs);
+}
+.button {
+  height: 44px;
+  width: 119px;
+}
+.button1 {
+  height: 44px;
+  flex: 1;
+}
+.iconButtons {
+  width: 292px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.aiCoverLetter,
+.pricing,
+.resumeTemplate {
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.aiCoverLetter {
+  flex: 1;
+}
+.pricing,
+.resumeTemplate {
+  text-decoration: none;
+  color: inherit;
+}
+.resumeTemplate {
+  width: 144px;
+  display: flex;
+  align-items: center;
+}
+.pricing {
+  display: inline-block;
+  min-width: 57px;
+}
+.header,
+.headerWrapper,
+.menu {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.menu {
+  width: 458px;
+  margin: 0 !important;
+  position: absolute;
+  top: calc(50% + 14px);
+  left: calc(50% - 501px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  color: var(--color-gray-100);
+  font-family: var(--font-sf-pro-text);
+}
+.header,
+.headerWrapper {
+  box-sizing: border-box;
+}
+.header {
+  flex: 1;
+  background-color: var(--color-gray-300);
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-45xl) var(--padding-85xl) var(--padding-base);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-sf-pro-display);
+}
+.headerWrapper {
+  align-self: stretch;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-21xl);
+}
+@media screen and (max-width: 750px) {
+  .header {
+    padding-left: var(--padding-33xl);
+    padding-right: var(--padding-33xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

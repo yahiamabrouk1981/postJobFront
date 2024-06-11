@@ -1,0 +1,251 @@
+.description,
+.title {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.title {
+  height: 171px;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+}
+.description {
+  height: 88px;
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  line-height: 22px;
+}
+.button {
+  width: 197px;
+  height: 44px;
+}
+.titleDescriptionButton {
+  width: 456px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl) 0;
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+  min-width: 456px;
+  max-width: 100%;
+}
+.illustrationIcon {
+  height: 500px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  min-width: 325px;
+}
+.aiContent {
+  width: 1036px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-61xl);
+  max-width: 100%;
+}
+.backgroundSimpleIcon {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 22.3px;
+  max-height: 100%;
+  width: 390.5px;
+}
+.groupIcon,
+.plantIcon,
+.vectorIcon {
+  position: absolute;
+  top: 71.3px;
+  left: 11.1px;
+  width: 349.6px;
+  height: 226.9px;
+  z-index: 1;
+}
+.plantIcon,
+.vectorIcon {
+  top: 416.4px;
+  left: 0;
+  width: 434px;
+  height: 1px;
+}
+.plantIcon {
+  top: 303px;
+  left: 328.5px;
+  width: 59.3px;
+  height: 113.1px;
+}
+.characterIcon,
+.interfaceIcon {
+  position: absolute;
+  top: 71px;
+  left: 130px;
+  width: 296.2px;
+  height: 159.6px;
+  object-fit: cover;
+  z-index: 2;
+}
+.characterIcon {
+  top: 180.2px;
+  left: 14.2px;
+  width: 265.6px;
+  height: 245.7px;
+  object-fit: contain;
+  z-index: 3;
+}
+.backgroundSimpleParent {
+  height: 443px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+}
+.illustration {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-10xl-1) var(--padding-12xl) var(--padding-8xl-9)
+    var(--padding-15xl);
+  box-sizing: border-box;
+  min-width: 325px;
+  max-width: 100%;
+}
+.description1,
+.title1 {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+}
+.title1 {
+  height: 171px;
+  font-size: inherit;
+  font-weight: 600;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+}
+.description1 {
+  font-size: var(--font-size-base);
+  letter-spacing: 0.02em;
+  line-height: 22px;
+}
+.button1 {
+  width: 244px;
+  height: 44px;
+}
+.aIContentInner,
+.titleParent {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.titleParent {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.aIContentInner {
+  width: 456px;
+  padding: var(--padding-66xl-5) 0 0;
+  box-sizing: border-box;
+  min-width: 456px;
+}
+.aIContent,
+.aIContentInner,
+.content {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.aIContent {
+  width: 1036px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-61xl);
+}
+.content {
+  align-self: stretch;
+  background-color: var(--color-limegreen);
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--padding-21xl) var(--padding-xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-sf-pro-text);
+}
+@media screen and (max-width: 1200px) {
+  .content {
+    padding-top: var(--padding-7xl);
+    padding-bottom: var(--padding-7xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .title {
+    font-size: var(--font-size-19xl);
+  }
+  .titleDescriptionButton {
+    flex: 1;
+  }
+  .aiContent {
+    flex-wrap: wrap;
+    gap: var(--gap-21xl);
+  }
+  .title1 {
+    font-size: var(--font-size-19xl);
+  }
+  .aIContentInner {
+    flex: 1;
+  }
+  .aIContent {
+    flex-wrap: wrap;
+    gap: var(--gap-21xl);
+  }
+}
+@media screen and (max-width: 750px) {
+  .titleDescriptionButton {
+    min-width: 100%;
+  }
+  .aiContent {
+    gap: var(--gap-xl);
+  }
+  .illustration {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .aIContentInner {
+    min-width: 100%;
+  }
+  .aIContent {
+    gap: var(--gap-xl);
+  }
+  .content {
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .title,
+  .title1 {
+    font-size: var(--font-size-10xl);
+  }
+  .aIContentInner {
+    padding-top: var(--padding-37xl);
+    box-sizing: border-box;
+  }
+}
